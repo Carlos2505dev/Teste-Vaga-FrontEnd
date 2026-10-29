@@ -42,6 +42,9 @@ npm
 ### Instalação
 
 ```bash
+
+git clone https://github.com/Carlos2505dev/Teste-Vaga-FrontEnd.git
+
 cd "Vaga Frontend"
 
 npm install
