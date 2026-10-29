@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Econverse | Tecnologia, moda e supermercado com até 50% off</title>
+    <meta
+      name="description"
+      content="Compre na Econverse: tecnologia, moda, supermercado e mais com até 50% de desconto, frete grátis acima de R$ 200 e parcelamento. Aproveite as ofertas!"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Econverse" />
+    <meta property="og:title" content="Econverse | Tecnologia, moda e supermercado com até 50% off" />
+    <meta
+      property="og:description"
+      content="Tecnologia, moda, supermercado e mais com até 50% de desconto, frete grátis acima de R$ 200 e parcelamento. Aproveite as ofertas!"
+    />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/assets/hero-black-friday.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Econverse | Tecnologia, moda e supermercado com até 50% off" />
+    <meta
+      name="twitter:description"
+      content="Tecnologia, moda, supermercado e mais com até 50% de desconto, frete grátis acima de R$ 200 e parcelamento."
+    />
+    <meta name="twitter:image" content="/assets/hero-black-friday.jpg" />
+
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.ico" />
+
+    <link rel="preconnect" href="https://app.econverse.com.br" crossorigin />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/hero-black-friday.jpg"
+      fetchpriority="high"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "#organizacao",
+            "name": "Econverse",
+            "url": "/",
+            "logo": "/assets/logo-econverse.svg",
+            "description": "Loja online com ofertas em tecnologia, moda, supermercado, saúde, esportes e bebidas."
+          },
+          {
+            "@type": "WebSite",
+            "@id": "#site",
+            "url": "/",
+            "name": "Econverse",
+            "inLanguage": "pt-BR",
+            "publisher": { "@id": "#organizacao" },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "/?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "#pagina",
+            "url": "/",
+            "name": "Econverse | Tecnologia, moda e supermercado com até 50% off",
+            "inLanguage": "pt-BR",
+            "isPartOf": { "@id": "#site" },
+            "about": { "@id": "#organizacao" }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
